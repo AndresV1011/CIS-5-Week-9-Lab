@@ -13,7 +13,7 @@ double average(const int a[], int n) {
 	for (int i = 0; i < n; i++) {
 		sum += a[i];
 	}
-	return statistic_cast<double>(sum) / n;
+	return static_cast<double>(sum) / n;
 }
 // TODO: void printSummary(double avg);
 void printSummary(double avg) {
